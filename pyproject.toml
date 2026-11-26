@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uk-bank-statement-reconcile"
+version = "0.1.0"
+description = "Offline UK bank statement PDF to CSV/Xero/QuickBooks converter that proves opening + in - out = closing. Nothing is uploaded."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = ["pdfplumber>=0.11"]
+keywords = ["bank-statement", "pdf-to-csv", "uk", "xero", "quickbooks", "reconciliation", "bookkeeping", "privacy"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Topic :: Office/Business :: Financial :: Accounting"]
+
+[project.urls]
+Homepage = "https://github.com/OlsOls4/uk-bank-statement-reconcile"
+"Hosted version" = "https://apify.com/olsols4/uk-bank-statement-pdf-to-csv"
+
+[project.scripts]
+uk-statement-reconcile = "statement_reconcile.__main__:main"
+
+[tool.setuptools]
+packages = ["statement_reconcile"]
