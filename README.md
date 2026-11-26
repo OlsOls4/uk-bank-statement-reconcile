@@ -21,7 +21,7 @@ row's running balance is checked too. If it doesn't add up, you're told exactly 
 ```bash
 pip install git+https://github.com/OlsOls4/uk-bank-statement-reconcile
 ```
-Python 3.9+.
+Python 3.10+.
 
 ## Use
 
